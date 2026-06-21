@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volery — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+         max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; line-height: 1.6;
+         color: #1a1c1e; background: #fafafa; }
+  @media (prefers-color-scheme: dark) { body { color: #e3e3e6; background: #16181c; } }
+  h1 { font-size: 1.7rem; margin-bottom: .2em; }
+  h2 { font-size: 1.15rem; margin-top: 1.8em; }
+  .updated { color: #6b7178; font-size: .9rem; }
+  .lede { background: rgba(127,127,127,.12); padding: 14px 16px; border-radius: 12px; }
+  code { background: rgba(127,127,127,.16); padding: 1px 5px; border-radius: 5px; }
+  a { color: #2f6fed; }
+</style>
+</head>
+<body>
+<h1>Volery — Privacy Policy</h1>
+<p class="updated">Last updated: 21 June 2026</p>
+
+<p class="lede"><strong>The short version:</strong> Volery has no servers of its own, collects
+nothing about you, contains no ads or analytics, and processes your data on your device by
+default. Anything that leaves your phone does so only because you chose to use a cloud feature,
+and it goes to the provider <em>you</em> configured — not to us.</p>
+
+<h2>Who we are</h2>
+<p>Volery is published by Azfar. Contact: <strong>[CONTACT_EMAIL]</strong>.</p>
+
+<h2>We do not collect your data</h2>
+<p>We operate <strong>no backend</strong> for the app and run <strong>no analytics, advertising,
+or tracking</strong>. We never receive your conversations, files, location, contacts, calendar,
+or API keys. There is no account and no sign-in for the on-device and bring-your-own-key
+features.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li><strong>On-device assistant (Scout).</strong> Messages you send to the on-device model are
+  processed locally and are not transmitted anywhere.</li>
+  <li><strong>Conversations, notes, and settings</strong> are stored locally. You can view,
+  export, or delete them in the app. An optional settings backup is encrypted on-device with a
+  password you set.</li>
+  <li><strong>Screen translate.</strong> When you tap the floating bubble, a screen capture is
+  processed <strong>on your device</strong> and is not uploaded.</li>
+  <li><strong>Device tools</strong> (calendar, contacts, coarse location, clipboard) are read
+  on-device, only when you enable a tool and only to answer your request.</li>
+</ul>
+
+<h2>What leaves your device — only when you choose a cloud feature</h2>
+<p>When you opt into a cloud feature, the relevant content is sent directly from your phone to the
+provider <strong>you</strong> selected, under <strong>that provider's</strong> privacy policy. We
+are not a party to that transfer and never receive the data.</p>
+<ul>
+  <li><strong>Cloud assistant (Sage), bring-your-own-key.</strong> If you configure a cloud AI
+  provider with your own API key, the messages you send to Sage — and any tool results used to
+  answer them — are transmitted to that provider. Your API key is stored only on your device and
+  is excluded from cloud backups; it is never sent to us.</li>
+  <li><strong>Connected tools.</strong> If you enable a web tool, the input needed to fulfil it is
+  sent to the third-party service you chose (Wikipedia, OpenWeatherMap, NewsAPI, Tavily/Brave,
+  CoinGecko). Any keys you provide are stored only on your device.</li>
+  <li><strong>MCP servers.</strong> If you connect a Model Context Protocol server, the tool
+  inputs you invoke are sent to that server, which you configured.</li>
+  <li><strong>Device data + cloud agents.</strong> If you ask a <strong>cloud</strong> agent a
+  question that uses a device tool, the relevant calendar / contact / location / clipboard content
+  for that request is included in the message to your chosen provider. With the on-device
+  assistant, it stays on the device. You control which tools are active for each message.</li>
+</ul>
+<p>All requests to remote providers use encrypted (HTTPS) connections. Cleartext is permitted only
+for connecting to a model you host yourself on a local/private address.</p>
+
+<h2>Permissions and why</h2>
+<ul>
+  <li><strong>Internet</strong> — to reach the cloud providers, tools, and MCP servers you
+  configure.</li>
+  <li><strong>Notifications</strong> — status while the assistant is working.</li>
+  <li><strong>Calendar / Contacts / Coarse location / Clipboard</strong> (optional) — read
+  on-device only when you turn on the matching tool.</li>
+  <li><strong>Display over other apps + screen capture</strong> (optional) — for the
+  screen-translate bubble; captures are processed on-device and not uploaded.</li>
+  <li><strong>Photos/media (via the system picker)</strong> — only the image you explicitly pick
+  to share with the assistant.</li>
+</ul>
+<p>You can revoke any permission in Android Settings; the related feature simply turns off.</p>
+
+<h2>Children</h2>
+<p>Volery is not directed to children under 13 (or the equivalent minimum age in your region).</p>
+
+<h2>Data retention and deletion</h2>
+<p>Your data lives on your device. Delete conversations and notes in the app, or clear all app
+data in Android Settings, to remove it. Data you sent to a third-party provider is governed by
+that provider's policy.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy; the "Last updated" date will change. Material changes will be noted
+in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions: <strong>[CONTACT_EMAIL]</strong>.</p>
+</body>
+</html>
