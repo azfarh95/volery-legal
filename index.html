@@ -20,7 +20,7 @@
 </head>
 <body>
 <h1>Volery — Privacy Policy</h1>
-<p class="updated">Last updated: 30 June 2026</p>
+<p class="updated">Last updated: 8 July 2026</p>
 
 <p class="lede"><strong>The short version:</strong> Volery has no servers of its own, collects
 nothing about you, contains no ads or analytics, and processes your data on your device by
@@ -47,6 +47,11 @@ features.</p>
   processed <strong>on your device</strong> and is not uploaded.</li>
   <li><strong>Device tools</strong> (calendar, contacts, coarse location, clipboard) are read
   on-device, only when you enable a tool and only to answer your request.</li>
+  <li><strong>Notes, voice transcripts, and documents.</strong> Your notes, voice-note
+  transcripts, and any documents (e.g. a PDF) you choose to add are stored locally. The
+  <strong>"ask your notes"</strong> search index — a set of on-device "meaning fingerprints"
+  built from your own content by a small model that runs locally — is computed on your phone and
+  never leaves your device.</li>
 </ul>
 
 <h2>What leaves your device — only when you choose a cloud feature</h2>
@@ -63,6 +68,18 @@ are not a party to that transfer and never receive the data.</p>
   CoinGecko). Any keys you provide are stored only on your device.</li>
   <li><strong>MCP servers.</strong> If you connect a Model Context Protocol server, the tool
   inputs you invoke are sent to that server, which you configured.</li>
+  <li><strong>Ask your notes, and documents.</strong> This feature reads your own notes, voice
+  transcripts, and any documents you add, and searches them <strong>entirely on your phone</strong>
+  — the content, the search model, and the search itself never leave your device. The only network
+  use is a one-time download of the on-device search model (about 6 MB) from a public model server
+  when you first turn the feature on; that download sends no personal data.</li>
+  <li><strong>Voice.</strong> Voice notes and the hands-free voice conversation use the
+  <strong>microphone</strong>. Voice notes are transcribed <strong>on your device</strong> (Whisper);
+  the hands-free voice model is a one-time download (about 57 MB, then fully offline). The hands-free
+  mode prefers the on-device speech recognizer, so your audio stays on the phone where that is
+  available; on some devices the system speech service may process the audio on Google's servers under
+  <strong>Google's</strong> privacy policy. Reading replies aloud (text-to-speech) uses your device's
+  built-in voice and stays on the device.</li>
   <li><strong>Device data + cloud agents.</strong> If you ask a <strong>cloud</strong> agent a
   question that uses a device tool, the relevant calendar / contact / location / clipboard content
   for that request is included in the message to your chosen provider. With the on-device
@@ -82,6 +99,9 @@ for connecting to a model you host yourself on a local/private address.</p>
   screen-translate bubble; captures are processed on-device and not uploaded.</li>
   <li><strong>Photos/media (via the system picker)</strong> — only the image you explicitly pick
   to share with the assistant.</li>
+  <li><strong>Microphone</strong> (optional) — only if you use voice notes or the hands-free voice
+  conversation. Voice notes are transcribed on-device; the hands-free mode prefers the on-device
+  speech recognizer. The app does not record audio otherwise.</li>
 </ul>
 <p>You can revoke any permission in Android Settings; the related feature simply turns off.</p>
 
