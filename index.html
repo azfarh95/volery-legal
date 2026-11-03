@@ -20,7 +20,7 @@
 </head>
 <body>
 <h1>Volery — Privacy Policy</h1>
-<p class="updated">Last updated: 8 July 2026</p>
+<p class="updated">Last updated: 3 November 2026</p>
 
 <p class="lede"><strong>The short version:</strong> Volery has no servers of its own, collects
 nothing about you, contains no ads or analytics, and processes your data on your device by
@@ -84,6 +84,8 @@ are not a party to that transfer and never receive the data.</p>
   question that uses a device tool, the relevant calendar / contact / location / clipboard content
   for that request is included in the message to your chosen provider. With the on-device
   assistant, it stays on the device. You control which tools are active for each message.</li>
+  <li><strong>Model list and model downloads.</strong> When the app starts it may fetch a small list of available on-device models (names, sizes, checksums) from <code>models.az-sentinel.xyz</code>, a server we run on Cloudflare; if that fails, the list built into the app is used. When you choose to download a model, the file comes from our mirror at that address and, if that fails, from Hugging Face. These requests reveal your IP address and the model you picked to those hosts, as any download does. They carry no account, no chat content and no identifier from us. Models are data files, not code, and are checked against a published checksum before use.</li>
+  <li><strong>Connecting an MCP server with sign-in (OAuth).</strong> If you connect an MCP server that uses &ldquo;Sign in&rdquo;, Volery opens that server's sign-in page in your browser and receives the result through its own link (<code>volery://</code>). Volery identifies itself to the server with a small public document at <code>models.az-sentinel.xyz/oauth-client.json</code>. The access token is stored only on your device (in app storage excluded from Android cloud backup) and is sent only to that MCP server. We never see it.</li>
 </ul>
 <p>All requests to remote providers use encrypted (HTTPS) connections. Cleartext is permitted only
 for connecting to a model you host yourself on a local/private address.</p>
